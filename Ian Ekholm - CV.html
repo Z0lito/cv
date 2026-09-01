@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>CV – Ian Ekholm</title>
+    <style>
+        /* Bas */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #333;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: #ffffff;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #249e5d;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 2px;
+            margin-top: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            margin: 0 0 4px 0;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #249e5d;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .name-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .name-row .title {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact {
+            margin-top: 8px;
+            font-size: 11px;
+        }
+
+        .contact span {
+            display: block;
+        }
+
+        .tagline {
+            margin-top: 6px;
+            font-size: 11px;
+            color: #555;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            margin-left: 16px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 2px solid #249e5d;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Layout */
+        .content {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .left-column {
+            flex: 2;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        /* Sektioner */
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2px;
+        }
+
+        .role {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .place-date {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .list-compact {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-compact li {
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+
+        /* Kunskaper/Språk */
+        .skill-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3px;
+        }
+
+        .skill-name {
+            font-size: 12px;
+        }
+
+        .skill-level {
+            display: inline-block;
+            font-size: 11px;
+            color: #777;
+        }
+
+        .lang-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .lang-table td {
+            padding: 2px 0;
+        }
+
+        .label {
+            font-weight: 600;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: #ffffff;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: auto;
+                min-height: auto;
+                padding: 10mm 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="header-info">
+            <div class="name-row">
+                <h1>Ian Ekholm</h1>
+                <span class="title">Studerande</span>
+            </div>
+            <div class="contact">
+                <span>Sörbyängsvägen 2C, 70254 Örebro</span>
+                <span>Telefon: 073 806 82 26</span>
+                <span>E-post: ian.ekholm00@gmail.com</span>
+                <span>Ålder: 26 • B-körkort</span>
+            </div>
+        </div>
+        <div class="avatar">
+            <!-- Byt URL om du vill använda en annan bild -->
+            <img src="https://www.cv-mallen.se/app/uploads/2025/11/cm_avatar_image_6929c4a4645d2.jpeg" alt="Foto på Ian Ekholm">
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="left-column">
+            <!-- Arbetslivserfarenhet -->
+            <h2>Arbetslivserfarenhet</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Amanuens</span>
+                    <span class="place-date">Örebros Universitet | November 2025 – Januari 2025</span>
+                </div>
+                <p>Uppnådde högre kvalitet i studenternas Python-arbete, mätt genom fler lösta labbuppgifter och slutförda moment, genom att handleda under labbtillfällen och stötta med felsökning/coachning i Python.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Maskinoperatör</span>
+                    <span class="place-date">Sigma Polymer Group AB | April – Augusti 2024</span>
+                </div>
+                <p>Uppnådde stabil produktion och leveransklara produkter, mätt genom att maskinen höll planerad drift och att artiklar blev klara för kundleverans, genom att sköta daglig operatörsdrift, kvalitetskontroll och rensning/efterarbete av gummiartiklar. </p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Försäljare</span>
+                    <span class="place-date">Mio Bromma | April 2022 – Januari 2023</span>
+                </div>
+                <p>Jag var anställd som försäljare av möbler med ansvarsområdet soffor, men sålde också sängar, matplatser, utemöbler samt andra dekorationer. En försäljning på 70 000 kr/dag var en snittförsäljning jag gjorde. Under min tid på Mio fick jag gå på olika säng- och soffutbildningar, där bland annat Carpe Diem föreläste om komforten i sina sängar. Utöver försäljning hanterade jag ordrar från centrallagret, offerter, utlåning av släp till kund samt kundkontakt via telefon och mejl.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Försäljare, kundservice och matlagning</span>
+                    <span class="place-date">Kolmården / Parks and Resorts | Oktober 2020 – Sommaren 2021</span>
+                </div>
+                <p>Jobbade inom fastfood på Kolmården och på Vildmarkshotellets frukostrestaurang. Ansvarade för kassahantering, kundservice och matlagning samt iordningställande av restaurangen. Jag arbetade dessutom på flera olika restauranger på Kolmården.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Hotellmanager</span>
+                    <span class="place-date">Town House Apartments | April 2019 – Augusti 2019</span>
+                </div>
+                <p>Ansvarig hotellmanager. Tog hand om bokningar via booking.com och per telefon samt välkomnade gäster till deras lägenheter. I arbetsuppgiften ingick inte slutstädning men jag valde ändå att nästan alltid även ta hand om den arbetsuppgiften. Tjänsten innebar mycket ensamarbete och ansvar över två olika fastigheter, totalt fem uthyrningslägenheter som hyrdes ut dygnvis.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Fältskötare</span>
+                    <span class="place-date">Samhällstekniska avdelningen | April 2018 – Augusti 2018</span>
+                </div>
+                <p>Arbetade ute på fältet med skötsel av stadens gator, parker och allmänna områden. Jag var del av en arbetsgrupp men en stor del av arbetet var självständigt.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Barnkonventionspilot</span>
+                    <span class="place-date">Rädda Barnen | April 2017 – Augusti 2017</span>
+                </div>
+                <p>Som Barnkonventionspilot representerade jag Rädda Barnen på Åland och fick en inblick i hur en internationell organisation fungerar på lokal nivå. Jag deltog i att sprida information om Barnkonventionen, planerade och genomförde aktiviteter för barn och vuxna, skapade informationsmaterial, gjorde undersökningar och uppdaterade i sociala medier.</p>
+            </div>
+
+            <!-- Utbildning -->
+            <h2>Utbildning</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Högskoleingenjör inom Datateknik</span>
+                    <span class="place-date">Örebros Universitet | Augusti 2023 – December 2026</span>
+                </div>
+                <p>Går för närvarande sista året på utbildningen.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Hälsoutvecklare / PT / Massör / Kostrådgivare / Grupptränare</span>
+                    <span class="place-date">Jakobsbergs folkhögskola | Augusti 2021 – Juni 2023</span>
+                </div>
+                <p>Utbildning inom hälsa, träning, kost och gruppträning.</p>
+                <p>Kursplan: <a href="https://jakobsbergsfolkhogskola.se/backnet/media_archive/original/bc181774144f85e7e38670affb993f7b.pdf">Länk till kursplanen</a></p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Tekniskt basår</span>
+                    <span class="place-date">Linköpings Universitet | Augusti 2019 – Juni 2020</span>
+                </div>
+                <p>Läste upp naturvetenskapliga ämnen inför en framtida ingenjörsutbildning.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Gymnasium med humanistisk inriktning</span>
+                    <span class="place-date">Ålands lyceum | Augusti 2016 – Juni 2019</span>
+                </div>
+                <p>Läste 75 olika kurser med humanistisk inriktning och tog finsk gymnasieexamen.</p>
+            </div>
+        </section>
+
+        <aside class="right-column">
+            <!-- Kunskaper -->
+            <h2>Kunskaper</h2>
+            <div class="item">
+                <div class="skill-row">
+                    <span class="skill-name">Intyg för grundkurs för ECDL</span>
+                    <span class="skill-level">★★★★☆</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-name">Intyg för ECDL Advance</span>
+                    <span class="skill-level">★★★★★</span>
+                </div>
+            </div>
+
+            <!-- Tekniska kunskaper -->
+            <h2>Tekniska kunskaper</h2>
+            <div class="item">
+                <ul class="list-compact">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Assembly</li>
+					<li>HTML</li>
+					<li>CSS</li>
+                </ul>
+            </div>
+
+            <!-- Språk -->
+            <h2>Språk</h2>
+            <table class="lang-table">
+                <tr>
+                    <td class="label">Svenska:</td>
+                    <td>Modersmål</td>
+                </tr>
+                <tr>
+                    <td class="label">Engelska:</td>
+                    <td>Flytande</td>
+                </tr>
+                <tr>
+                    <td class="label">Finska:</td>
+                    <td>Grundläggande</td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+</div>
+</body>
+</html>
